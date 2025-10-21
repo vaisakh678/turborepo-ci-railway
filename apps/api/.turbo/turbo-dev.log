@@ -1,30 +1,5 @@
 
-> api@1.0.0 dev
+> api@1.0.0 dev /Users/vaisakh/programs/turbo/turbo-ci-railway/apps/api
 > node src/index.js
 
-[1G[0Knode:internal/modules/package_json_reader:255
-  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
-        ^
-
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'express' imported from /Users/vaisakh/programs/turbo/turbo-ci-railway/apps/api/src/index.js
-[90m    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:255:9)[39m
-[90m    at packageResolve (node:internal/modules/esm/resolve:767:81)[39m
-[90m    at moduleResolve (node:internal/modules/esm/resolve:853:18)[39m
-[90m    at defaultResolve (node:internal/modules/esm/resolve:983:11)[39m
-[90m    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:783:12)[39m
-[90m    at #cachedDefaultResolve (node:internal/modules/esm/loader:707:25)[39m
-[90m    at ModuleLoader.resolve (node:internal/modules/esm/loader:690:38)[39m
-[90m    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:307:38)[39m
-[90m    at ModuleJob._link (node:internal/modules/esm/module_job:183:49)[39m {
-  code: [32m'ERR_MODULE_NOT_FOUND'[39m
-}
-
-Node.js v22.18.0
-[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m Lifecycle script `dev` failed with error:
-[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mcode[39m [33m1[39m
-[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mpath[39m /Users/vaisakh/programs/turbo/turbo-ci-railway/apps/api
-[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mworkspace[39m api@1.0.0
-[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mlocation[39m /Users/vaisakh/programs/turbo/turbo-ci-railway/apps/api
-[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m command failed
-[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mcommand[39m sh -c node src/index.js
-[1G[0K⠙[1G[0K
+Example app listening on port 3000
