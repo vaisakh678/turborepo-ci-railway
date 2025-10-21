@@ -11,6 +11,7 @@ COPY package.json ./
 COPY apps/api/package.json ./apps/api/package.json
  
 RUN pnpm i 
+RUN pnpm i --dir apps/api
  
 # Copy app source
 COPY . .
