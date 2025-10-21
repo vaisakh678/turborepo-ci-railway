@@ -18,4 +18,4 @@ COPY . .
  
 EXPOSE 3000
  
-CMD [ "node", "apps/api/src/index.js" ]
+CMD [ "bun", "apps/api/src/index.js" ]
