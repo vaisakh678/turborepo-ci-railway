@@ -7,8 +7,7 @@
 	},
 	"deploy": {
 		"numReplicas": 1,
-		"restartPolicyType": "ON_FAILURE",
-		"healthcheckPath": "/health"
+		"restartPolicyType": "ON_FAILURE"
 	},
 	"service": "weteller-api"
 }
