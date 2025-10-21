@@ -1,0 +1,21 @@
+FROM oven/bun:latest
+
+RUN bun add -g pnpm
+ 
+WORKDIR /usr/src/app
+ 
+# Copy root package.json and lockfile
+COPY package.json ./
+COPY pnpm-lock.yaml ./
+COPY pnpm-workspace.yaml ./
+ 
+# Copy the api package.json
+COPY apps/api/package.json ./apps/api/package.json
+ 
+RUN pnpm i 
+ 
+COPY . .
+ 
+EXPOSE 3000
+ 
+CMD [ "bun", "apps/api/src/index.js" ]
