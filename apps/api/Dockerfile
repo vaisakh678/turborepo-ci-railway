@@ -1,6 +1,6 @@
-FROM node:22.18.0
+FROM oven/bun:latest
 
-RUN npm i -g pnpm
+RUN bun add -g pnpm
  
 WORKDIR /usr/src/app
  
@@ -13,9 +13,7 @@ COPY pnpm-workspace.yaml ./
 COPY apps/api/package.json ./apps/api/package.json
  
 RUN pnpm i 
-# RUN pnpm i --dir apps/api
  
-# Copy app source
 COPY . .
  
 EXPOSE 3000
